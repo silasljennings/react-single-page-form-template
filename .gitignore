@@ -56,3 +56,6 @@ yarn-error.log
 # Firebase Admin SDK service account JSON file (ensure this is ignored)
 service-account-key/*.json
 
+.env
+.env.local
+.env.*.local
