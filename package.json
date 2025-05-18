@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "tsc -b && vite build && vite"
+    "start": "tsc -b && vite --mode development && vite",
+    "start:prod": "tsc -b && vite --mode production && vite"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
@@ -18,6 +19,7 @@
     "@tailwindcss/vite": "^4.1.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "cors": "^2.8.5",
     "lucide-react": "^0.509.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

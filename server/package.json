@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development && node server",
+    "start": "cross-env NODE_ENV=development node server && node server",
+    "start:test": "cross-env NODE_ENV=test node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,5 +16,8 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "firebase-admin": "^13.3.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
